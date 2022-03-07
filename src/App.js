@@ -1,4 +1,4 @@
-import VendingMachine from "./VendingMachine";
+import VendingMachine from "./components/VendingMachine";
 import Routes from './Routes';
 import { BrowserRouter as Router } from "react-router-dom";
 
@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <VendingMachine />
+        
         <Routes />
       </Router>
     </div>

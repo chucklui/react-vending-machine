@@ -1,9 +1,16 @@
 import { Route, Switch } from "react-router-dom";
 
+import VendingMachine from "./components/VendingMachine";
+import Chips from './components/Chips';
+import Chocolate from './components/Chocolate';
+import Cookies from './components/Cookies';
+
 function Routes() {
+  
+  return(
   <Switch>
     <Route exact path="/">
-      <Home />
+      <VendingMachine />
     </Route>
     <Route exact path="/chips">
       <Chips />
@@ -14,6 +21,6 @@ function Routes() {
     <Route exact path="/cookies">
       <Cookies />
     </Route>
-  </Switch>
+  </Switch>)
 }
 export default Routes;
